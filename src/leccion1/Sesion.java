@@ -40,7 +40,7 @@ public class Sesion {
         byte i = 0;
         System.out.println("\ncondicionales switch\n");
         switch (i) {
-            case 3:
+            case 1:
                 System.out.println("i es 3");
                 break;
             case 4:
