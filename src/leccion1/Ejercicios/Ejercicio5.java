@@ -14,23 +14,25 @@ public class Ejercicio5 {
         int num2 = lector.nextInt();
         int num3 = lector.nextInt();
 
-        if (num1 >= num2){
-            if (num1 >= num3){
+        /*
+         * con funcion.
+         * int d = Math.max(num1, Math.max(num2, num3));
+         * System.out.println(d);
+         */
+
+        if (num1 >= num2) {
+            if (num1 >= num3) {
                 System.out.println("El numero mayor es: " + num1);
-            }
-            else{
+            } else {
                 System.out.println("El numero mayor es: " + num3);
             }
-        }
-        else{
-            if (num2 >= num3){
+        } else {
+            if (num2 >= num3) {
                 System.out.println("El numero mayor es: " + num2);
-            }
-            else{
+            } else {
                 System.out.println("El numero mayor es: " + num3);
             }
         }
     }
 
 }
- 

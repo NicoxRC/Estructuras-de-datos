@@ -44,5 +44,7 @@ public class Sesion2 {
             }
         }
         System.out.println("El numero mayor es: " + mayor);
+
+        //explicar ejercicios 9 y 10 
     }
 }

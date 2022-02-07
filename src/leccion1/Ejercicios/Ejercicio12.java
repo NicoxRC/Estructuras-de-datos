@@ -14,14 +14,12 @@ public class Ejercicio12 {
         while (resultado != 1){
             if (numero % 2 == 0){
                 resultado = numero / 2;
-                numero = resultado;
-                System.out.println(resultado);
             }
             else{
                 resultado = 3 * numero + 1;
-                numero = resultado;
-                System.out.println(resultado);
             }
+            numero = resultado;
+            System.out.println(resultado);
         }
   
     }

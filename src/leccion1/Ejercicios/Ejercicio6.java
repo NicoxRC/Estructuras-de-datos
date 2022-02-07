@@ -31,5 +31,8 @@ public class Ejercicio6 {
         else if (num1 % 7 == 0) {
             System.out.println("Es multiplo de 7.");
         }
+        else{
+            System.out.println("No es multiplo de ningun.");
+        }
     }
 }
