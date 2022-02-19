@@ -54,7 +54,6 @@ public class Ejercicio3 {
 
                 System.out.println(a1 + b1 + c1 + d1);
 
-
                 break;
             case 3:
                 // Version con string
@@ -71,6 +70,6 @@ public class Ejercicio3 {
 
                 break;
         }
-
+        lector6.close();
     }
 }

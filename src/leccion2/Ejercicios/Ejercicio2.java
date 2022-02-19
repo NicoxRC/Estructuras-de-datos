@@ -36,6 +36,7 @@ public class Ejercicio2 {
         }
         float a = lector.nextFloat();
         float b = lector.nextFloat();
+        lector.close();
         for (int i = 0; i < vector.length; i++) {
             if (vector[i] >= a && vector[i] <= b) {
                 contador++;
@@ -50,7 +51,7 @@ public class Ejercicio2 {
         int contador = 0;
         Random random = new Random();
         for (int i = 0; i < vector.length; i++) {
-            vector[i] = random.nextFloat()*(999999999999f+999999999999f)-999999999999f;
+            vector[i] = random.nextFloat() * (999999999999f + 999999999999f) - 999999999999f;
         }
         float a = -999999999999f;
         float b = 999999999999f;

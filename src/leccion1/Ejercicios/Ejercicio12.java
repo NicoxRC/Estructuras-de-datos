@@ -4,23 +4,23 @@ import java.util.Scanner;
 
 public class Ejercicio12 {
     public static void main(String[] args) {
-        //La conjetura de Collatz
-        
+        // La conjetura de Collatz
+
         System.out.println("\nIngrese el numero: \n");
         Scanner lector = new Scanner(System.in);
         int numero = lector.nextInt();
         int resultado = 0;
+        lector.close();
 
-        while (resultado != 1){
-            if (numero % 2 == 0){
+        while (resultado != 1) {
+            if (numero % 2 == 0) {
                 resultado = numero / 2;
-            }
-            else{
+            } else {
                 resultado = 3 * numero + 1;
             }
             numero = resultado;
             System.out.println(resultado);
         }
-  
+
     }
 }

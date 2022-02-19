@@ -14,6 +14,8 @@ public class Ejercicio8 {
         Scanner lector = new Scanner(System.in);
         int num = lector.nextInt();
         int numero1 = 0;
+        lector.close();
+
         for (int i = 0; i <= num; i++) {
             numero1 += (i * i * i);
         }

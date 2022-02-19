@@ -38,6 +38,7 @@ public class Sesion2 {
             int n2 = Lector.nextInt();
             listaN[i] = n2;
         }
+        Lector.close();
         for (int i = 0; i < listaN.length; i++) {
             if (listaN[i] > mayor) {
                 mayor = listaN[i];

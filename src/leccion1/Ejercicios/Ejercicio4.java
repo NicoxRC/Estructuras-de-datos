@@ -12,12 +12,12 @@ public class Ejercicio4 {
         System.out.println("\nIngrese un numero: \n");
         Scanner lector = new Scanner(System.in);
         int a = lector.nextInt();
+        lector.close();
 
-        if (a % 2 == 0){
-            System.out.println(a*2);
-        }
-        else{
-            System.out.println(a*3);
+        if (a % 2 == 0) {
+            System.out.println(a * 2);
+        } else {
+            System.out.println(a * 3);
         }
     }
 

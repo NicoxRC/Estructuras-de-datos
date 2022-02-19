@@ -32,6 +32,7 @@ public class Ejercicio3 {
         for (int i = 0; i < vector.length; i++) {
             vector[i] = lector.nextInt();;
         }
+        lector.close();
         int contador = vector[largo-1];
         for (int i = vector.length - 2; i >=0; i--) {
             contador +=vector[i];

@@ -14,7 +14,7 @@ public class Ejercicio1 {
                 modo_manual();
                 break;
             case 2:
-                modo_automatico(new int[]{5, 1, 7, 8}, 3);
+                modo_automatico(new int[] { 5, 1, 7, 8 }, 3);
                 break;
             case 3:
                 modo_peor_caso();
@@ -50,10 +50,11 @@ public class Ejercicio1 {
                 mayor = vector[j];
             }
         }
+        lector.close();
         System.out.println(mayor);
     }
 
-    private static void modo_automatico(int vector[], int distancia){
+    private static void modo_automatico(int vector[], int distancia) {
 
         int mayor = 0;
         for (int j = 0; j < distancia; j++) {
@@ -90,10 +91,8 @@ public class Ejercicio1 {
     private static void modo_mejorado() {
 
         Scanner lector = new Scanner(System.in);
-        int largo = lector.nextInt();
         int mayor = 0;
-        
-        //suponiendo que dn el valor de distancia antes de llenarlo
+        // suponiendo que den el valor de distancia antes de llenarlo
         int distancia = lector.nextInt();
         for (int i = 0; i < distancia; i++) {
             int numero = lector.nextInt();
@@ -101,6 +100,7 @@ public class Ejercicio1 {
                 mayor = numero;
             }
         }
+        lector.close();
         System.out.println(mayor);
     }
 }

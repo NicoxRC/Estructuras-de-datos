@@ -17,6 +17,8 @@ public class Ejercicio2 {
         byte edad3 = lector.nextByte();
         byte edad4 = lector.nextByte();
 
-        System.out.println("promedio de edad es: " + (((float)(edad1 + edad2 + edad3 + edad4)/4)));
-    }   
+        lector.close();
+
+        System.out.println("promedio de edad es: " + (((float) (edad1 + edad2 + edad3 + edad4) / 4)));
+    }
 }

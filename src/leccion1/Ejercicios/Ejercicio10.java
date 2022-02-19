@@ -15,17 +15,17 @@ public class Ejercicio10 {
             int numeros = lector.nextInt();
             vector[i] = numeros;
         }
+        lector.close();
         for (int i = 0; i < vector.length; i++) {
             contador = 0;
-            for (int j = 1; j <= vector[i] ; j++) {
-                if (vector[i] % j == 0){
+            for (int j = 1; j <= vector[i]; j++) {
+                if (vector[i] % j == 0) {
                     contador++;
                 }
             }
-            if (contador <= 2){
+            if (contador <= 2) {
                 System.out.println("Primo.");
-            }
-            else{
+            } else {
                 System.out.println("No es primo.");
             }
         }

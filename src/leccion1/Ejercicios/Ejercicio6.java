@@ -19,19 +19,16 @@ public class Ejercicio6 {
         System.out.println("\nIngrese un numero: \n");
         Scanner lector = new Scanner(System.in);
         int num1 = lector.nextInt();
+        lector.close();
         if (num1 % 2 == 0) {
             System.out.println("Es multiplo de 2.");
-        }
-        else if (num1 % 3 == 0) {
+        } else if (num1 % 3 == 0) {
             System.out.println("Es multiplo de 3.");
-        }
-        else if (num1 % 5 == 0) {
+        } else if (num1 % 5 == 0) {
             System.out.println("Es multiplo de 5.");
-        }
-        else if (num1 % 7 == 0) {
+        } else if (num1 % 7 == 0) {
             System.out.println("Es multiplo de 7.");
-        }
-        else{
+        } else {
             System.out.println("No es multiplo de ningun.");
         }
     }

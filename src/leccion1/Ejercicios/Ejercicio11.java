@@ -10,22 +10,23 @@ public class Ejercicio11 {
 
         System.out.println("Ingrese el numero y y el limite: ");
         Scanner lector = new Scanner(System.in);
-        int base = 5;
-        int expo = 5000;
-        /*int base = lector.nextInt();
+        int base = lector.nextInt();
         int expo = lector.nextInt();
-        */
+        lector.close();
+        /*
+         * int base = lector.nextInt();
+         * int expo = lector.nextInt();
+         */
         int resultado = 0;
         for (int i = 1; i < expo; i++) {
             resultado = (int) Math.pow(base, i);
             if (resultado <= expo) {
                 System.out.println(resultado);
-            }
-            else{
+            } else {
                 break;
             }
         }
         long end2 = System.currentTimeMillis();
-        System.out.println("Tiempo en mili segundos: "+ (end2-start2));
+        System.out.println("Tiempo en mili segundos: " + (end2 - start2));
     }
 }

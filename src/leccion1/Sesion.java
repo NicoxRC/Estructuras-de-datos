@@ -26,6 +26,7 @@ public class Sesion {
         Scanner lector = new Scanner(System.in);
         byte lectura = lector.nextByte();
         System.out.println(lectura + " " + a + " " + c);
+        lector.close();
 
         // condicionales
         System.out.println("\ncondicionales if\n");

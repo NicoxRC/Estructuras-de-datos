@@ -16,16 +16,14 @@ public class Ejercicio7 {
         System.out.println("\nIngrese un numero: \n");
         Scanner lector = new Scanner(System.in);
         int num = lector.nextInt();
+        lector.close();
 
         for (int i = 0; i < num; i++) {
-            if (i % 2 == 0){
+            if (i % 2 == 0) {
                 System.out.println("Hola mundo");
-            }
-            else{
+            } else {
                 System.out.println("Hello world");
             }
         }
-
     }
-
 }

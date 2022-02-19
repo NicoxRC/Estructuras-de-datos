@@ -12,6 +12,7 @@ public class Ejercicio1 {
         Scanner lector = new Scanner(System.in);
         byte numero = lector.nextByte();
         System.out.println(numero * numero);
+        lector.close();
 
     }
 }

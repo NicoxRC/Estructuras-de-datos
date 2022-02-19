@@ -13,6 +13,7 @@ public class Ejercicio5 {
         int num1 = lector.nextInt();
         int num2 = lector.nextInt();
         int num3 = lector.nextInt();
+        lector.close();
 
         /*
          * con funcion.
