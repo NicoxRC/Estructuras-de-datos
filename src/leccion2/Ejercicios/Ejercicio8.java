@@ -20,32 +20,43 @@ public class Ejercicio8 {
 
     private static void modo_manual() {
         Scanner lector = new Scanner(System.in);
-        //int c = lector.nextInt();
+        int c = lector.nextInt();
         int x = 0;
-        int z = 0;
-        int contador = 0;
-        boolean end = true;
-        boolean end2 = true;
-        //Vector<String> respuesta = new Vector<String>();
-        while (end2) {
-            while (end) {
-                contador = 0;
-                int n = lector.nextInt();
-                Vector<Integer> saltos = new Vector<Integer>();
-                for (int i = 0; i < n; i++) {
-                    saltos.add(lector.nextInt());
-                }
-                x = saltos.get(0);
-                z = 0;
-                while (z != x && z == saltos.size()) {
-                        x = saltos.get(x);
-                        contador++;
+        int k = 0;
+        boolean fin = true;
+        int contador_de_saltos = 0;
 
-                    if (contador == saltos.size()){
+        // Vector<String> respuesta = new Vector<String>();
+
+        for (int j = 0; j < c; j++) {
+            k = 0;
+            contador_de_saltos = 0;
+            int n = lector.nextInt();
+            int saltos [] = new int [n];
+            Vector<Integer> repeticion = new Vector<Integer>();
+
+            for (int i = 0; i < n; i++) {
+                saltos[i] = lector.nextInt();
+            }
+
+            x = saltos[0];
+            repeticion.add(0);
+
+            while (fin){
+                if (k >= saltos.length || k < 0){
+                    break;
+                }else{
+                    x = saltos [k];
+                    contador_de_saltos++;
+                    k += x;
+                    if (repeticion.indexOf(k) < 0){
+                        repeticion.add(k);
+                    }else{
                         break;
                     }
                 }
             }
+            System.out.println(contador_de_saltos);
         }
     }
 }
